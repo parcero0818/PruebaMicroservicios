@@ -18,9 +18,16 @@ public class PaisServiceImpl implements PaisService{
 		return paisRepository.findAll();
 	}
 
-	@Override
+	
 	public Pais getPaisById(Integer id) {
 		return paisRepository.findOne(id);
 	}
-
+	
+	public Pais addPais(Pais pais){
+		return paisRepository.save(pais);
+	}
+	
+	public void deletePais(Integer id) throws Exception{
+		paisRepository.delete(id);
+	}
 }

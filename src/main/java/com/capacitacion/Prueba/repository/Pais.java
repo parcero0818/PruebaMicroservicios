@@ -31,7 +31,4 @@ public class Pais implements Serializable{
 		this.pa_nombre = pa_nombre;
 	}
 	
-	
-	
-	
 }
